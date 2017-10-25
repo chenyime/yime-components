@@ -1,0 +1,100 @@
+.ym-transfer {
+    font-size: 10px;
+    color: #575757;
+}
+
+.ym-transfer-box {
+    vertical-align: top;
+    width: 178px;
+    height: 200px;
+    border: 1px solid #d8d8d8;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.ym-button {
+    vertical-align: top;
+    width: 35px;
+    height: 250px;
+    display: inline-block;
+    text-align: center;
+}
+
+.left, .right {
+    border: 1px solid #d8d8d8;
+    width: 28px;
+    height: 18px;
+    border-radius: 4px;
+    margin-left: 2px;
+    background-color: #f4f4f4;
+}
+
+.left i {
+    display: inline-block;
+    background-image: url("./back.svg");
+    height: 18px;
+    width: 28px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.right i {
+    display: inline-block;
+    background-image: url("./more.svg");
+    height: 18px;
+    width: 28px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.left {
+    margin-top: 75px;
+}
+
+.right {
+    margin-top: 5px;
+}
+
+.top {
+    position: relative;
+    height: 26px;
+    width: 158px;
+    border-bottom: 1px solid #d8d8d8;
+    margin-top: 7px;
+    padding: 0 10px;
+}
+
+.top .name {
+    position: absolute;
+    right: 12px;
+}
+
+.items {
+    height: 165px;
+    width: 100%;    
+    overflow: auto;
+}
+
+.item{
+    height: 22px;
+    width: 158px;
+    margin-top: 5px;
+    padding: 0 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: #ecf6fd;
+}
+
+.item .content {
+    display: inline-block;
+}
+
+.active {
+    background-color: #1f90e6;
+}
