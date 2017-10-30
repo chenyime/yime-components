@@ -2,28 +2,14 @@ import React, { Component } from 'react';
 
 export class Box extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            selected: [],
-        };
-    }
-
     handleItemClick = (e, key) => {
-        const { selected } = this.state;
         const { onChange } = this.props;
-        if (selected.includes(key)) {
-            selected.splice(selected.indexOf(key), 1);
-        } else {
-            selected.push(key);
-        }
-        this.setState({ selected });
-        onChange(selected);
+        onChange(key);
     }
 
     render() {
-        const { name, items } = this.props;
-        const { selected } = this.state;
+        const { name, items, selected } = this.props;
+        console.log(selected);
         return (
             <div className="ym-transfer-box">
                 <div className="top">
